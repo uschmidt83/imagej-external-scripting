@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>16.2.0</version>
+		<relativePath />
+	</parent>
+
+	<groupId>org.uweschmidt</groupId>
+	<artifactId>external-scripting</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>ImageJ External Scripting</name>
+	<description>TBD</description>
+	<url>https://github.com/uschmidt83/imagej-external-scripting</url>
+	<inceptionYear>2017</inceptionYear>
+	<organization>
+		<name>Uwe Schmidt</name>
+		<url>http://uweschmidt.org/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>uschmidt83</id>
+			<name>Uwe Schmidt</name>
+			<url>http://uweschmidt.org/</url>
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>TBD</name>
+			<properties><id>none</id></properties>
+		</contributor>		
+	</contributors>	
+
+	<mailingLists>
+		<mailingList>
+			<name>ImageJ Forum</name>
+			<archive>http://forum.imagej.net/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/uschmidt83/imagej-external-scripting</connection>
+		<developerConnection>scm:git:git@github.com:uschmidt83/imagej-external-scripting</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/uschmidt83/imagej-external-scripting</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/uschmidt83/imagej-external-scripting/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<properties>
+		<package-name>org.uweschmidt.imagej</package-name>
+		<main-class>org.uweschmidt.imagej.ScriptingServer</main-class>
+		<license.licenseName>mit</license.licenseName>
+		<license.copyrightOwners>Uwe Schmidt</license.copyrightOwners>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej-legacy</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.zeromq</groupId>
+			<artifactId>jeromq</artifactId>
+			<version>0.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.msgpack</groupId>
+			<artifactId>msgpack</artifactId>
+			<version>0.6.12</version>
+		</dependency>
+		<dependency>
+			<groupId>sc.fiji</groupId>
+			<artifactId>bigdataviewer-vistools</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>
